@@ -14,9 +14,9 @@ services:
         value: 3000
     autoDeploy: true
 
-  # MySQL Database
+  # PostgreSQL Database (Free tier available)
   - type: pserv
     name: property-listing-db
-    env: mysql
+    env: postgres
     plan: free
     ipAllowList: []
