@@ -14,14 +14,7 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "${MYSQL_ADDON_USER}",
-    "password": "${MYSQL_ADDON_PASSWORD}",
-    "database": "${MYSQL_ADDON_DB}",
-    "host": "${MYSQL_ADDON_HOST}",
-    "port": "${MYSQL_ADDON_PORT}",
-    "dialect": "mysql",
-    "dialectOptions": {
-      "ssl": "Amazon RDS"
-    }
+    "use_env_variable": "MYSQL_ADDON_URI",
+    "dialect": "mysql"
   }
 }
